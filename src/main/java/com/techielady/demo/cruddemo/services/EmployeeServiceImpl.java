@@ -5,10 +5,12 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.techielady.demo.cruddemo.dao.EmployeeDAO;
 import com.techielady.demo.cruddemo.entity.Employee;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 	
 	private EmployeeDAO employeeDAO;
